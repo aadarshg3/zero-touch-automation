@@ -1,0 +1,274 @@
+Command 'python' not found, did you mean:
+  command 'python3' from deb python3
+  command 'python' from deb python-is-python3
+netg@DESKTOP-EBH0I8A:~/devnet$ python2
+
+
+Command 'python2' not found, but can be installed with:
+sudo apt install python2
+netg@DESKTOP-EBH0I8A:~/devnet$ 
+netg@DESKTOP-EBH0I8A:~/devnet$ 
+netg@DESKTOP-EBH0I8A:~/devnet$ python3
+Python 3.10.12 (main, Jul 29 2024, 16:56:48) [GCC 11.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+>>> 
+>>> 
+>>> config_data = {}
+>>> 
+>>> type(config_data)
+<class 'dict'>
+>>> 
+>>> len(config_data)
+0
+>>> config_data = { "intf": "ge0/1", "desc": "connected to server", "speed": 1000, "duplex": "full"}
+>>> 
+>>> config_data
+{'intf': 'ge0/1', 'desc': 'connected to server', 'speed': 1000, 'duplex': 'full'}
+>>> 
+>>> len(config_data)
+4
+>>> config_data[0]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 0
+>>> 
+>>> 
+>>> config_data["desc"]
+'connected to server'
+>>> config_data["duplex"]
+'full'
+>>> 
+>>> config_data["intf"]
+'ge0/1'
+>>> 
+>>> 
+>>> config_data["intf1"]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 'intf1'
+>>> 
+>>> 
+>>> for item in config_data:
+...     print(item)
+... 
+intf
+desc
+speed
+duplex
+>>> 
+>>> for item in config_data.items():
+... 
+  File "<stdin>", line 2
+    
+    ^
+IndentationError: expected an indented block after 'for' statement on line 1
+>>> 
+>>> for item in config_data.items():
+...     print(item)
+... 
+('intf', 'ge0/1')
+('desc', 'connected to server')
+('speed', 1000)
+('duplex', 'full')
+>>> 
+>>> 
+>>> dir(dict)
+['__class__', '__class_getitem__', '__contains__', '__delattr__', '__delitem__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__ior__', '__iter__', '__le__', '__len__', '__lt__', '__ne__', '__new__', '__or__', '__reduce__', '__reduce_ex__', '__repr__', '__reversed__', '__ror__', '__setattr__', '__setitem__', '__sizeof__', '__str__', '__subclasshook__', 'clear', 'copy', 'fromkeys', 'get', 'items', 'keys', 'pop', 'popitem', 'setdefault', 'update', 'values']
+>>> 
+>>> 
+>>> 
+>>> dir(config_data)
+['__class__', '__class_getitem__', '__contains__', '__delattr__', '__delitem__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__ior__', '__iter__', '__le__', '__len__', '__lt__', '__ne__', '__new__', '__or__', '__reduce__', '__reduce_ex__', '__repr__', '__reversed__', '__ror__', '__setattr__', '__setitem__', '__sizeof__', '__str__', '__subclasshook__', 'clear', 'copy', 'fromkeys', 'get', 'items', 'keys', 'pop', 'popitem', 'setdefault', 'update', 'values']
+>>> 
+>>> 
+>>> config_data.keys()
+dict_keys(['intf', 'desc', 'speed', 'duplex'])
+>>> 
+>>> 
+>>> config_data.values()
+dict_values(['ge0/1', 'connected to server', 1000, 'full'])
+>>> 
+>>> 
+>>> config_data.items()
+dict_items([('intf', 'ge0/1'), ('desc', 'connected to server'), ('speed', 1000), ('duplex', 'full')])
+>>> 
+>>> 
+>>> device_list = ('intf', 'ge0/1')
+>>> 
+>>> 
+>>> type(device_list)
+<class 'tuple'>
+>>> 
+>>> 
+>>> device_list[0]
+'intf'
+>>> 
+>>> device_list[1]
+'ge0/1'
+>>> 
+>>> device_list[0] = "abc"
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'tuple' object does not support item assignment
+>>> 
+>>> 
+>>> test_list = ["abc", "xyz"]
+>>> 
+>>> test_list[0] = "pqr"
+>>> 
+>>> 
+>>> 
+>>> config_data.items()
+dict_items([('intf', 'ge0/1'), ('desc', 'connected to server'), ('speed', 1000), ('duplex', 'full')])
+>>> 
+>>> 
+>>> for config in config_data.items():
+...     print(config)
+... 
+('intf', 'ge0/1')
+('desc', 'connected to server')
+('speed', 1000)
+('duplex', 'full')
+>>> 
+>>> 
+>>> 
+>>> for config in config_data.items():
+...     print(config[0])
+... 
+intf
+desc
+speed
+duplex
+>>> 
+>>> for config in config_data.items():
+...     print(config[1])
+... 
+ge0/1
+connected to server
+1000
+full
+>>> 
+>>> 
+>>> dir(tuple)
+['__add__', '__class__', '__class_getitem__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'count', 'index']
+>>> dir(list)
+['__add__', '__class__', '__class_getitem__', '__contains__', '__delattr__', '__delitem__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__gt__', '__hash__', '__iadd__', '__imul__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__reversed__', '__rmul__', '__setattr__', '__setitem__', '__sizeof__', '__str__', '__subclasshook__', 'append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> for config in config_data.items():
+...     print(type(config[1]))
+... 
+<class 'str'>
+<class 'str'>
+<class 'int'>
+<class 'str'>
+>>> 
+>>> 
+>>> for config in config_data.items():
+...     print(type(config[0]))
+... 
+<class 'str'>
+<class 'str'>
+<class 'str'>
+<class 'str'>
+>>> for config in config_data.items():
+...     print(type(config))
+... 
+<class 'tuple'>
+<class 'tuple'>
+<class 'tuple'>
+<class 'tuple'>
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> device_info = {"name": "Cisco ISR", "model": "ISR1000", "OS": 20.4, "site": "NY"}
+>>> 
+>>> 
+>>> device_info["mode"]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 'mode'
+>>> device_info["model"]
+'ISR1000'
+>>> 
+>>> 
+>>> 
+>>> dir(dict)
+['__class__', '__class_getitem__', '__contains__', '__delattr__', '__delitem__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__ior__', '__iter__', '__le__', '__len__', '__lt__', '__ne__', '__new__', '__or__', '__reduce__', '__reduce_ex__', '__repr__', '__reversed__', '__ror__', '__setattr__', '__setitem__', '__sizeof__', '__str__', '__subclasshook__', 'clear', 'copy', 'fromkeys', 'get', 'items', 'keys', 'pop', 'popitem', 'setdefault', 'update', 'values']
+>>> 
+>>> device_info["model"]
+'ISR1000'
+>>> 
+>>> device_info["model1"]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 'model1'
+>>> 
+>>> 
+>>> device_info["model"]
+'ISR1000'
+>>> 
+>>> 
+>>> device_info.get("model")
+'ISR1000'
+>>> 
+>>> device_info.get("model1")
+>>> 
+>>> 
+>>> 
+>>> device_info.get("model1", "Key not found")
+'Key not found'
+>>> 
+>>> 
+>>> device_info.get("model1")
+>>> 
+>>> 
+>>> 
+>>> device_info.get("model")
+'ISR1000'
+>>> 
+>>> device_info.get("model", "Key not found")
+'ISR1000'
+>>> 
+>>> 
+>>> 
+>>> dir(dict)
+['__class__', '__class_getitem__', '__contains__', '__delattr__', '__delitem__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__ior__', '__iter__', '__le__', '__len__', '__lt__', '__ne__', '__new__', '__or__', '__reduce__', '__reduce_ex__', '__repr__', '__reversed__', '__ror__', '__setattr__', '__setitem__', '__sizeof__', '__str__', '__subclasshook__', 'clear', 'copy', 'fromkeys', 'get', 'items', 'keys', 'pop', 'popitem', 'setdefault', 'update', 'values']
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> device_info
+{'name': 'Cisco ISR', 'model': 'ISR1000', 'OS': 20.4, 'site': 'NY'}
+>>> 
+>>> 
+>>> merge_me = {"hostname": "NY-ISR-A", "location": "NY-DC1"}
+>>> 
+>>> 
+>>> device_info
+{'name': 'Cisco ISR', 'model': 'ISR1000', 'OS': 20.4, 'site': 'NY'}
+>>> 
+>>> merge_me
+{'hostname': 'NY-ISR-A', 'location': 'NY-DC1'}
+>>> 
+>>> 
+>>> device_info.update(merge_me)
+>>> 
+>>> 
+>>> device_info
+{'name': 'Cisco ISR', 'model': 'ISR1000', 'OS': 20.4, 'site': 'NY', 'hostname': 'NY-ISR-A', 'location': 'NY-DC1'}
+>>> 
+>>> 
+>>> help(dict.update)
