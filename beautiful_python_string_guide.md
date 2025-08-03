@@ -1,7 +1,6 @@
-# 🧵 Python String Guide with Networking Examples
-This guide covers Python string basics to advanced concepts using real-world network automation examples. Includes code and corresponding outputs.
+# 🧵 String data type
 
-## 🔹 Creating Strings
+## 🔹 How to define a "string"
 
 **🧠 Code:**
 ```python
@@ -13,7 +12,7 @@ NetG India's
 Python Class'''
 ```
 
-## 🔹 Memory and Type of String
+## 🔹 What is the data type of python? And, What is memory location? 
 
 **🧠 Code:**
 ```python
@@ -87,7 +86,7 @@ S
 r
 ```
 
-## 🔹 Slicing Strings
+## 🔹 How to Slice String? 
 
 **🧠 Code:**
 ```python
@@ -103,7 +102,7 @@ NetG
 India
 ```
 
-## 🔹 Step and Reversal
+## 🔹 How can slice using step (jump) & How to get string in reverse? 
 
 **🧠 Code:**
 ```python
@@ -116,7 +115,7 @@ Ti_sNt_nda
 aidnI_GteN_si_sihT
 ```
 
-## 🔹 String Methods and Help
+## 🔹 In Python how to take help to understand the method of data structure? 
 
 **🧠 Code:**
 ```python
@@ -124,9 +123,9 @@ print(dir(str))       # Lists all string methods
 help(str.upper)         # Help on upper method
 ```
 
-## 🌐 Network Automation Examples
+## 🌐 Examples of Format method!
 
-## 🔹 Ping Command
+## 🔹 Ex:1) Ping Command
 
 **🧠 Code:**
 ```python
@@ -138,7 +137,7 @@ print(ping_cmd.format("2.2.2.2", "1.1.1.1"))
 ping 2.2.2.2 source 1.1.1.1
 ```
 
-## 🔹 VLAN Command
+## 🔹 Ex:2) VLAN Command
 
 **🧠 Code:**
 ```python
@@ -150,7 +149,7 @@ print(vlan_cmd.format(10))
 vlan 10
 ```
 
-## 🔹 SNMP Config
+## 🔹 Ex:3) SNMP Config
 
 **🧠 Code:**
 ```python
@@ -162,7 +161,7 @@ print(snmp_cmd.format("1.1.1.1", "public", "link-down"))
 snmp-server host 1.1.1.1 public link-down
 ```
 
-## 🔹 DNS Config
+## 🔹 Ex:4) DNS Config
 
 **🧠 Code:**
 ```python
@@ -174,7 +173,7 @@ print(dns_cmd.format("8.8.8.8"))
 ip name-server 8.8.8.8
 ```
 
-## 🔹 User Account
+## 🔹 Ex:5) User Account
 
 **🧠 Code:**
 ```python
@@ -186,7 +185,7 @@ print(cmd1.format("admin", "15", "netg"))
 username admin privilege 15 password netg
 ```
 
-## 🔹 NTP Server
+## 🔹 Ex:6) NTP Server
 
 **🧠 Code:**
 ```python
