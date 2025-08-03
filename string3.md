@@ -1,5 +1,4 @@
-# 🌐 IP Address Classification in Python
-This document demonstrates how to classify IP addresses as **private**, **public**, or **special types** using string operations in Python. Includes step-by-step logic and terminal interaction examples.
+# 🌐 IP Address Classification using "STRING" datatype:
 
 ## 🔹 LOGIC 1: Using `startswith()` and basic string slicing
 **🧠 Code:**
