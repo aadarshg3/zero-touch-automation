@@ -1,4 +1,4 @@
-# 📘 Python Strings and Networking - Practical Guide
+# 📘 Python Strings for Network Engineers - Practical Guide
 This guide covers the fundamentals of strings in Python, including creation, manipulation, method usage, and real-world networking examples.
 
 ## 🔹 String Basics
