@@ -1,4 +1,4 @@
-## 🔹 Case Sensitivity and Comparison
+## 🔹 String's Method : upper
 **🧠 Code:**
 ```python
 s = "hello world"
